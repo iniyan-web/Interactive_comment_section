@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+
+.comment__score,
+.reply__score,
+.sreply__score {
+  background-color: $neutral-color-4;
+  height: 5.8rem;
+  width: 6%;
+  padding: 0.2rem 0;
+  flex-flow: column nowrap;
+  border-radius: 8px;
+
+  .score__plus,
+  .score__minus {
+    fill: #c5c6ef;
+
+    &:hover {
+      cursor: pointer;
+      fill: $primary-color-1;
+    }
+  }
+
+  .score__count {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $primary-color-1;
+  }
+}

@@ -1,0 +1,87 @@
+@use "../abstracts/variables" as *;
+
+.total-replies {
+  width: 89.4%;
+  margin-left: auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -5.5%;
+    height: 100%;
+    width: 1px;
+    background-color: $primary-color-3;
+    opacity: 0.5;
+  }
+}
+
+.reply-wrapper {
+  width: 100%;
+
+  .reply {
+    background-color: $neutral-color-5;
+    width: inherit;
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+
+  .reply__info {
+    width: 91%;
+
+    .r-info__top {
+      margin-bottom: 0.8rem;
+
+      .user {
+        gap: 14px;
+
+        &__img {
+          width: 30px;
+        }
+
+        &__name,
+        &__r-creation {
+          font-size: 1rem;
+          display: inline;
+        }
+
+        &__name {
+          font-weight: 700;
+          color: $neutral-color-1;
+        }
+
+        &__you {
+          display: inline;
+          width: 2.5rem;
+          height: 1.3rem;
+          background-color: $primary-color-1;
+          font-size: 0.9rem;
+          color: $neutral-color-5;
+          padding-left: 7px;
+          margin-left: -6px;
+          border-radius: 2.5px;
+        }
+
+        &__r-creation {
+          color: $neutral-color-2;
+        }
+      }
+    }
+
+    .r-info__bottom {
+      font-size: 1rem;
+      color: $neutral-color-2;
+      line-height: 1.4rem;
+      word-wrap: break-word;
+
+      span {
+        font-weight: 700;
+        color: $primary-color-1;
+      }
+    }
+  }
+}

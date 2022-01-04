@@ -1,0 +1,5 @@
+@mixin flexBox($align-position, $justify-position) {
+  display: flex;
+  align-items: $align-position;
+  justify-content: $justify-position;
+}

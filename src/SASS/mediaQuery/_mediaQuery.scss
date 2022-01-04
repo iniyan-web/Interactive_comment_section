@@ -1,0 +1,208 @@
+@media screen and (max-width: 720px) {
+  .comment-section {
+    width: 40rem;
+  }
+
+  .comment {
+    padding: 1rem;
+  }
+
+  .add-comment {
+    padding: 1rem;
+
+    .user__img {
+      width: 32px;
+    }
+
+    .user__comment {
+      width: 35rem;
+
+      .comment__area {
+        width: 80.5%;
+      }
+    }
+  }
+
+  .edit-comment {
+    width: 34.5rem;
+    height: 9rem;
+
+    .edit__area {
+      height: 62%;
+    }
+  }
+
+  .reply-wrapper {
+    .reply {
+      padding: 1rem;
+    }
+  }
+
+  .add-reply {
+    padding: 1rem;
+
+    .user__img {
+      width: 32px;
+    }
+
+    .user__reply {
+      width: 35rem;
+
+      .reply__area {
+        width: 80.5%;
+      }
+    }
+  }
+
+  .edit-reply {
+    width: 30.7rem;
+    height: 9rem;
+
+    .edit__area {
+      height: 62%;
+    }
+  }
+
+  .sub-reply {
+    padding: 1rem;
+  }
+
+  .add-subreply {
+    padding: 1rem;
+
+    .user__img {
+      width: 32px;
+    }
+
+    .user__subreply {
+      width: 31rem;
+
+      .subreply__area {
+        width: 78%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .comment-section {
+    width: 30rem;
+  }
+
+  .comment,
+  .reply-wrapper .reply,
+  .sub-reply {
+    position: relative;
+  }
+
+  .comment__score,
+  .reply__score,
+  .sreply__score {
+    height: 2.5rem;
+    width: 6.7rem;
+    padding: 0.2rem;
+    flex-flow: row nowrap;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .comment__info,
+  .reply-wrapper .reply__info,
+  .sreply__info {
+    width: 100%;
+    margin-bottom: 3.4rem;
+  }
+
+  .action-panel {
+    gap: 1.2rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1rem;
+  }
+
+  .total-replies {
+    width: 96%;
+
+    &::before {
+      left: -4%;
+    }
+  }
+
+  .add-comment,
+  .add-reply,
+  .add-subreply {
+    position: relative;
+
+    .user__img {
+      position: absolute;
+      z-index: 1;
+      bottom: 1rem;
+      left: 1rem;
+    }
+
+    .user__comment,
+    .user__reply,
+    .user__subreply {
+      width: 100%;
+      margin-bottom: 3.4rem;
+
+      .comment__area,
+      .reply__area,
+      .subreply__area {
+        width: inherit;
+      }
+    }
+  }
+
+  .btn--comment,
+  .btn--reply,
+  .btn--subreply {
+    top: 115%;
+  }
+
+  .edit-comment,
+  .edit-reply {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .comment-section {
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .comment-section {
+    width: 23rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .delete-comment {
+    .dc-modal {
+      width: 90%;
+    }
+  }
+
+  .delete-reply {
+    .dr-modal {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+
+  .comment-section {
+    width: 21.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem;
+  }
+}

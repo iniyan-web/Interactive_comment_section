@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+
+.edit-comment {
+  width: 38rem;
+  height: 10rem;
+  position: relative;
+
+  .edit__area {
+    width: 100%;
+    height: 65%;
+    border: 1px solid $neutral-color-3;
+    border-radius: 8px;
+    cursor: pointer;
+    resize: none;
+    overflow-y: hidden;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: $neutral-color-1;
+    padding: 0.5rem 1.2rem;
+
+    &:focus-visible {
+      outline: none;
+      border: 1px solid $primary-color-1;
+    }
+  }
+}

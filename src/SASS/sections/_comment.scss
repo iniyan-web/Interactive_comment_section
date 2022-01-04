@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as *;
+
+.comment {
+  background-color: $neutral-color-5;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1.3rem;
+  border-radius: 8px;
+}
+
+.comment__info {
+  width: 91%;
+
+  .c-info__top {
+    margin-bottom: 0.8rem;
+
+    .user {
+      gap: 14px;
+
+      &__img {
+        width: 30px;
+      }
+
+      &__name,
+      &__c-creation {
+        font-size: 1rem;
+        display: inline;
+      }
+
+      &__name {
+        font-weight: 700;
+        color: $neutral-color-1;
+      }
+
+      &__you {
+        display: inline;
+        width: 2.5rem;
+        height: 1.3rem;
+        background-color: $primary-color-1;
+        font-size: 0.9rem;
+        color: $neutral-color-5;
+        padding-left: 7px;
+        margin-left: -6px;
+        border-radius: 2.5px;
+      }
+
+      &__c-creation {
+        color: $neutral-color-2;
+      }
+    }
+  }
+
+  .c-info__bottom {
+    font-size: 1rem;
+    color: $neutral-color-2;
+    line-height: 1.4rem;
+    word-wrap: break-word;
+  }
+}

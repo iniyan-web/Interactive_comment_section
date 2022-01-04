@@ -1,0 +1,25 @@
+@use "../abstracts/mixins" as *;
+
+.comment,
+.reply,
+.sub-reply,
+.add-comment,
+.add-reply,
+.add-subreply {
+  @include flexBox(flex-start, space-between);
+}
+
+.comment__score,
+.reply__score,
+.sreply__score {
+  @include flexBox(center, space-around);
+}
+
+.c-info__top,
+.r-info__top,
+.sr-info__top,
+.user,
+.action-panel,
+.modal__actions {
+  @include flexBox(center, space-between);
+}

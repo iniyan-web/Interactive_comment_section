@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as *;
+
+.action-panel {
+  gap: 1.5rem;
+
+  .action__reply,
+  .action__delete,
+  .action__edit {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $primary-color-1;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-color-3;
+    }
+
+    .reply__icon,
+    .delete__icon,
+    .edit__icon {
+      fill: currentColor;
+    }
+
+    .reply__text,
+    .delete__text,
+    .edit__text {
+      display: inline;
+      padding-left: 6px;
+      position: relative;
+      bottom: 2px;
+    }
+  }
+
+  .action__delete {
+    color: $primary-color-2;
+
+    &:hover {
+      color: $primary-color-4;
+    }
+  }
+}

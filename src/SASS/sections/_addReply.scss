@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as *;
+
+.add-reply {
+  background-color: $neutral-color-5;
+  width: inherit;
+  padding: 1.3rem;
+  margin: -0.6rem 0 1rem 0;
+  border-radius: 8px;
+
+  .user__img {
+    width: 35px;
+  }
+
+  .user__reply {
+    display: inline-block;
+    width: 38.85rem;
+    height: 5.5rem;
+    position: relative;
+
+    .reply__area {
+      width: 82%;
+      height: 100%;
+      border: 1px solid $neutral-color-3;
+      border-radius: 8px;
+      cursor: pointer;
+      resize: none;
+      overflow-y: hidden;
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.4rem;
+      color: $neutral-color-1;
+      padding: 0.5rem 1.2rem;
+
+      &:focus-visible {
+        outline: none;
+        border: 1px solid $primary-color-1;
+      }
+    }
+  }
+}
